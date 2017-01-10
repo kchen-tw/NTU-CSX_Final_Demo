@@ -40,7 +40,7 @@ $('#query').on('click', function() {
     });
 });
 
-var tid = $.url(document.URL).param('ReviewerID');
+var tid = $.url(document.URL).param('reviewer_id');
 //alert(tid);
 $("input[name$='ReviewerID']").val(tid);
 //$("input[name$='ReviewerName']").val(res.data[this.index].reviewer_name);
@@ -66,8 +66,11 @@ queryData(optionsReviewers, function(res) {
     }
     if(foundInd != -1)
         $("input[name$='ReviewerName']").val(res.data[foundInd].reviewer_name);
-    else
-        alert("No this Reviewer ID");
+    else{
+        $("input[name$='ReviewerName']").val(res.data[0].reviewer_name);
+        //alert("No this Reviewer ID");
+    }
+        
 });
 
 // queryData(options2, function(res) {
