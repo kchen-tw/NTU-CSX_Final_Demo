@@ -153,7 +153,7 @@ $(function() {
     var setteamData = function(index) {
         $('.team-name').text(initEvent.team[index].team_name);
         $('.course-name').text(initEvent.team[index].course_name);
-        $('.team-index').text("第" + (index + 1) + "組");
+        $('.team-index').text("報告順序：" + (index + 1));
     };
 
     $('.loader-wrapper').removeClass('hide');
