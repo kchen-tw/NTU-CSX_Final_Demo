@@ -1,15 +1,21 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-TW">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>臺大 CS+X 課程期末成果發表會</title>
+    <meta name="description" content="台灣大學 CS+X">
+    <!-- shortcut -->
+    <link rel="shortcut icon" href="images/faviconntu.ico">
+    <!--RWD setup -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 
     <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
+    <link rel="stylesheet" type="text/css" href="css/loader.css">
     <link rel="stylesheet" type="text/css" href="css/score.css">
 
 
@@ -24,6 +30,26 @@
 <body>
     <div class="section">
         <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td colspan="5">評審ID:
+                                    <input type="text" name="ReviewerID" disabled="" size="5">姓名:
+                                    <input type="text" name="ReviewerName" disabled="" size="20">
+                                    <!--<select id="ReviewerNames" name="ReviewerNames" width="10">
+										</select>-->
+                                </td>
+                                <td align="right">
+                                    <!--<input type="button" onclick="formSubmit()" value="送出" class="btn btn-primary">-->
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-12">
                     <form id="myForm" name="myForm">
@@ -154,14 +180,9 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="5">評審ID:
-                                        <input type="text" name="ReviewerID" disabled="" size="5">姓名:
-                                        <input type="text" name="ReviewerName" disabled="" size="20" >
-                                        <!--<select id="ReviewerNames" name="ReviewerNames" width="10">
-										</select>-->
+                                    <td>
                                     </td>
                                     <td align="right">
-                                        <!--<input type="button" onclick="formSubmit()" value="送出" class="btn btn-primary">-->
                                         <button id="query" type="button" class="btn btn-primary">送出</button>
                                     </td>
                                 </tr>
@@ -172,8 +193,10 @@
             </div>
         </div>
     </div>
-
-    <script src="js/purl.js"></script>    
+    <div class="loader-wrapper hide">
+        <div class="loader"></div>
+    </div>
+    <script src="js/purl.js"></script>
     <script src="js/scoreSubmit.js"></script>
 </body>
 

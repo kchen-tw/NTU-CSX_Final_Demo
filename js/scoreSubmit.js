@@ -27,6 +27,8 @@ $('#query').on('click', function() {
     options.data = data;
     options.filter = filter;
 
+    $('.loader-wrapper').removeClass('hide');
+
     // 查詢資料
     queryData(options, function(response) {
 
@@ -37,6 +39,7 @@ $('#query').on('click', function() {
         } else {
             console.log(response);
         }
+        $('.loader-wrapper').addClass('hide');
     });
 });
 
