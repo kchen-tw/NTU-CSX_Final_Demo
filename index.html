@@ -94,17 +94,17 @@
                 <div class="card-group" id="teammate_card_group">
 
                     <div class="card wow fadeIn" v-for="worker in teammate">
-                        <img class="card-img-top img-fluid" :src="'images/teammate/' + worker.img_url" alt="Card image cap">
-                        <!--<div class="s-box-img" :style="{ 'background': 'url(images/teammate/'+worker.img_url+')', 'background-size': 'cover'}">-->
+                        <!--<img class="card-img-top img-fluid" :src="'fvimages/teammate/' + worker.img_url" alt="Card image cap">-->
+                        <div class="s-box-img" :style="{ 'background': 'url(images/teammate/'+worker.img_url+')', 'background-size': 'cover'}">
+                        </div>
+                        <div class="card-block fadeIn">
+                            <h4 class="card-title">{{worker.name}}</h4>
+                            <p class="card-text">{{worker.description}}</p>
+                        </div>
                     </div>
-                    <div class="card-block fadeIn">
-                        <h4 class="card-title">{{worker.name}}</h4>
-                        <p class="card-text">{{worker.description}}</p>
-                    </div>
-                </div>
 
+                </div>
             </div>
-        </div>
         </div>
     </section>
 
