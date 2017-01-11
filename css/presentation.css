@@ -41,6 +41,7 @@ ul {
     opacity: 0;
     transition: opacity 0.2s linear;
     cursor: pointer;
+    width: 60px;
 }
 
 li {
