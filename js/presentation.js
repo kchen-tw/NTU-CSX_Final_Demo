@@ -131,7 +131,10 @@ var initData = function(callback) {
     var options = {
         api: 'https://script.google.com/macros/s/AKfycbzTfdt_q9aNqvWp7LW9JKy6sZeL9fK-KjDcsuaFdmoLlzYsu0-R/exec',
         // api: 'https://script.google.com/a/macros/csie.ntu.edu.tw/s/AKfycbx2VJc30mJ_EeQ2zN_8W0EYBoHf5yhyeuflgzx_bl6H/dev',
-        sheet: 'team_list'
+        sheet: 'team_list',
+        filter: {
+            presentation: true,
+        }
     };
 
     // 查詢資料
@@ -175,7 +178,7 @@ $(function() {
             var idx = parseInt($(this).attr('data-team-index'));
             setteamData(idx);
         });
-
+        $('.team-data').removeClass('hide');
         $('.loader-wrapper').addClass('hide');
         initEvent();
     });
