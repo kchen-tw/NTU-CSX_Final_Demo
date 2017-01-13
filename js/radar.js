@@ -109,5 +109,5 @@ $(document).ready(function() {
         window.location.href = './radar.html?team_id=' + parseInt($(this).val());
     });
 
-    getReviewer(0, team_id);
+    getReviewer(1, team_id);
 });
