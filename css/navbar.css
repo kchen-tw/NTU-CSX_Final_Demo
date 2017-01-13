@@ -1,0 +1,7 @@
+.navbar-default {
+    background-color: rgba(33, 33, 33, 0.9);
+}
+
+.navbar-fixed-top {
+    position: relative;
+}

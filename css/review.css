@@ -1,0 +1,15 @@
+.reviewer-box-img {
+    /*height: 0;*/
+    padding-bottom: 100%;
+    /*position: relative;*/
+    border-radius: 100%;
+}
+
+.reviewer-box {
+    border-radius: 100%;
+}
+
+.modal-header .close {
+    font-size: 1em;
+    margin-top: -23px;
+}

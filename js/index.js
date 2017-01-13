@@ -21,6 +21,4 @@
         $('.navbar-toggler:visible').click();
     });
 
-
-
 })(jQuery);

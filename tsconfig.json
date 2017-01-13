@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "sourceMap": false,
+        // 是否輸出 .d.ts
+        "declaration": false,
+        // 設定輸出資料夾
+        "outDir": "js/",
+        "lib": ["dom", "es5", "es2015.promise", "es2015.collection"]
+
+    },
+    // "types": [
+    //     "jquery",
+    //     "purl",
+    //     "vue"
+    // ],
+    // typeroots option has been previously configured
+    // "typeroots": [
+    //     // add path to @types
+    //     "node_modules/@types",
+    //     "node_modules/vue/types"
+    // ],
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

@@ -61,7 +61,7 @@ var initEvent = function() {
         } else if (playing) {
             // clearTimeout(tt);
             tt = setTimeout(countdown, 100);
-            count--
+            count--;
         } else {
             // clearTimeout(tt);
             tt = setTimeout(countdown, 100);
@@ -95,7 +95,7 @@ var initEvent = function() {
             // $('iframe').attr('src', initEvent.team[++a].slide_url);
             changeIframeUrl(++a);
             console.log('第' + (a + 1) + "組");
-            $('#data-frame').trigger('iframe-src-changed');
+
         } else {
             return false;
         }
@@ -106,7 +106,6 @@ var initEvent = function() {
             // $('iframe').attr('src', initEvent.team[--a].slide_url);
             changeIframeUrl(--a);
             console.log('第' + (a + 1) + "組");
-            $('#data-frame').trigger('iframe-src-changed');
         } else {
             return false;
         }

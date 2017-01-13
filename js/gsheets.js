@@ -33,7 +33,8 @@ function queryData(options, callback) {
     });
 
     request.done(function(response, textStatus, jqXHR) {
-        callback(response, textStatus, jqXHR);
+        if (callback)
+            callback(response, textStatus, jqXHR);
     });
 
     request.fail(function(jqXHR, textStatus, errorThrown) {

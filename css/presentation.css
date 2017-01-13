@@ -20,6 +20,7 @@ iframe {
 .clock {
     position: absolute;
     z-index: 99;
+    width: 60px;
 }
 
 #time_left {
@@ -66,6 +67,7 @@ li {
     right: 30px;
     padding: 3px;
     background: #fff;
+    opacity: 0.8;
     z-index: 11;
     width: 150px;
     font-family: 'Noto Sans TC', 'Montserrat', 'Helvetica Neue', Arial, sans-serif;

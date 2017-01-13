@@ -1,22 +1,24 @@
-
-body{
-  background: repeating-linear-gradient(120deg, rgba(86, 86, 86, 0.57), rgba(255, 255, 255, 0.6) 1px, transparent 1px, transparent 30px, rgba(103, 103, 103, 0.3) 30px, rgba(255, 255, 255, 0.3) 31px, transparent 31px, transparent 60px), repeating-linear-gradient(60deg, rgba(139, 139, 139, 0.6), rgba(255, 255, 255, 0.6) 1px, transparent 1px, transparent 30px, rgba(255, 255, 255, 0.3) 30px, rgba(255, 255, 255, 0.3) 31px, transparent 31px, transparent 60px), repeating-linear-gradient(to bottom, rgba(178, 178, 178, 0.3), rgba(255, 255, 255, 0.3) 1px, transparent 1px, transparent 30px),#ffffff
+body {
+    background: repeating-linear-gradient(120deg, rgba(86, 86, 86, 0.57), rgba(255, 255, 255, 0.6) 1px, transparent 1px, transparent 30px, rgba(103, 103, 103, 0.3) 30px, rgba(255, 255, 255, 0.3) 31px, transparent 31px, transparent 60px), repeating-linear-gradient(60deg, rgba(139, 139, 139, 0.6), rgba(255, 255, 255, 0.6) 1px, transparent 1px, transparent 30px, rgba(255, 255, 255, 0.3) 30px, rgba(255, 255, 255, 0.3) 31px, transparent 31px, transparent 60px), repeating-linear-gradient(to bottom, rgba(178, 178, 178, 0.3), rgba(255, 255, 255, 0.3) 1px, transparent 1px, transparent 30px), #ffffff
 }
 
-#wrapper{
+#wrapper {
     padding: 0px 0 50px;
 }
-#wrapper>div{
+
+#wrapper>div {
     background: transparent !important
 }
 
-.tick text{
+.tick text {
     fill: #727272;
 }
+
 .navbar-default {
     background-color: rgba(33, 33, 33, 0.9);
 }
-.navbar-fixed-top{
+
+.navbar-fixed-top {
     position: relative;
 }
 
@@ -29,16 +31,26 @@ body{
     box-sizing: border-box;
     padding-bottom: 0;
 }
-.radar-title{
+
+.radar-title {
+    position: absolute;
+    top: 100px;
+    right: 40px;
+    /*padding: 3px;*/
+    /*background: #fff;*/
+    z-index: 11;
+    width: 200px;
+    font-family: 'Noto Sans TC', 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
     text-align: center;
-    padding: 100px 0 0px;
-    color:#454545;
+    font-size: 1em;
 }
-.slec{
+
+.slec {
     width: 30%;
     background: transparent;
 }
-.sec-box{
+
+.sec-box {
     padding: 20px 0 0;
     cursor: pointer;
 }
@@ -271,21 +283,25 @@ body{
     color: #999;
     font-family: arial;
 }
-.loader-wrapper{
+
+.loader-wrapper {
     position: fixed;
     width: 100%;
     height: 100%;
-    top:0;
+    top: 0;
     z-index: 9999;
-    background: rgba(255,255,255,.6)
+    background: rgba(255, 255, 255, .6)
+}
 
+.hide {
+    display: none;
 }
-.hide{
-    display: none ;
-}
+
 .loader {
-    border: 5px solid #ccc; /* Light grey */
-    border-top: 5px solid #3498db; /* Blue */
+    border: 5px solid #ccc;
+    /* Light grey */
+    border-top: 5px solid #3498db;
+    /* Blue */
     border-radius: 50%;
     width: 90px;
     height: 90px;
@@ -294,14 +310,20 @@ body{
     margin-top: -45px;
     margin-left: -45px;
     top: 50%;
-    left:50%;
+    left: 50%;
     z-index: 999;
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
+
+
 /* Following are base64 images */
 
 .pdb-root.error {

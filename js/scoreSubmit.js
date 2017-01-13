@@ -12,6 +12,7 @@ $('#query').on('click', function() {
     var filter = {
         team_id: parseInt($("input[name$='TeamID']")[0].value),
         reviewer_id: parseInt($("input[name$='ReviewerID']")[0].value),
+        final_demo: false
     };
     var data = {
         score_1: parseFloat($("input[name$='score1']")[0].value),

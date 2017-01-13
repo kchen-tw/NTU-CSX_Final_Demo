@@ -7,5 +7,19 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "kchen.tw",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@types/bootstrap": "^3.3.32",
+    "@types/jquery": "^2.0.39",
+    "@types/lodash": "^4.14.50",
+    "@types/node": "^7.0.0",
+    "@types/purl": "^2.3.29",
+    "@types/vue": "^2.0.0",
+    "vue": "^2.1.8"
+  },
+  "jshintConfig": {
+    "globals": {
+      "$": false
+    }
+  }
 }

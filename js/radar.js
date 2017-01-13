@@ -48,6 +48,7 @@ var getScore = function(team_id) {
         sheet: 'team_score',
         filter: [{
             team_id: team_id,
+            final_demo: true
         }]
     };
 
@@ -97,6 +98,7 @@ $(document).ready(function() {
             if (team_id == response.data[key].team_id) {
                 select_string = 'selected';
                 $('#team_name').text(response.data[key].team_name);
+                $('#course_name').text(response.data[key].course_name);
             }
             var option = '<option value="' + response.data[key].team_id + '" ' + select_string + '>' + response.data[key].team_name + '</option>';
             $('#team_lists').append(option);
